@@ -1,0 +1,14 @@
+<h1>Featuring <%= @cocktail.name %></h1>
+
+
+
+
+<% @cocktail.doses.each do |dose| %>
+  <p><%= dose.description %></p>
+  <hr>
+<% end %>
+
+<% @cocktail.ingredients.each do |ingredient| %>
+  <p><%= ingredient.name %></p>
+  <hr>
+<% end %>
