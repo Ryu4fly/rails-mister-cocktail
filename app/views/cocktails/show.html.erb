@@ -1,14 +1,17 @@
 <h1>Featuring <%= @cocktail.name %></h1>
 
+<div class="info">
+  <% @cocktail.ingredients.each do |ingredient| %>
+    <p><%= ingredient.name %></p>
+    <hr>
+  <% end %>
 
+  <% @cocktail.doses.each do |dose| %>
+    <p><%= dose.description %></p>
+    <hr>
+  <%= link_to '🗑', dose_path(dose), method: :delete %>
 
+  <% end %>
 
-<% @cocktail.doses.each do |dose| %>
-  <p><%= dose.description %></p>
-  <hr>
-<% end %>
+</div>
 
-<% @cocktail.ingredients.each do |ingredient| %>
-  <p><%= ingredient.name %></p>
-  <hr>
-<% end %>
