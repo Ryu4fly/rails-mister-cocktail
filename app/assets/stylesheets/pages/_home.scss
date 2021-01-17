@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+.banner-container {
+  background-image: asset-url("main-banner.jpg");
+  background-size: cover;
+  height: 700px;
+  background-position-y: -56px;
+
+  #cover-sheet {
+    background-color: rgba(0,0,0,0.3);
+    height: 700px
+  }
+
+  #banner-title p {
+    color: white;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+
+
+}
+
+

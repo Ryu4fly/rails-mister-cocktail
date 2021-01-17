@@ -1,9 +1,8 @@
 class CocktailsController < ApplicationController
+  before_action :cocktail_all, only: %i[home index]
   def home; end
 
-  def index
-    @cocktails = Cocktail.all
-  end
+  def index; end
 
   def new
     @cocktail = Cocktail.new
@@ -26,5 +25,9 @@ class CocktailsController < ApplicationController
 
   def cocktail_params
     params.require(:cocktail).permit(:name)
+  end
+
+  def cocktail_all
+    @cocktails = Cocktail.all
   end
 end
