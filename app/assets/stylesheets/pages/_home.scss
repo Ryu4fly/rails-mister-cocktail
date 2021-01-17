@@ -1,25 +1,37 @@
 // Specific CSS for your home-page
-.banner-container {
+.home-banner {
   background-image: asset-url("main-banner.jpg");
   background-size: cover;
   height: 700px;
   background-position-y: -56px;
 
   #cover-sheet {
+    position: relative;
     background-color: rgba(0,0,0,0.3);
     height: 700px
   }
 
+  #banner-title {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    line-height: 50px;
+  }
+
   #banner-title p {
     color: white;
-    font-family: monospace;
+    font-family: Roboto;
     font-size: 50px;
     font-weight: bold;
     margin: 0px;
   }
 
+}
 
-
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
 

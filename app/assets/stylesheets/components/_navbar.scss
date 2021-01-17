@@ -1,15 +1,20 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: transparent;
+  background: white;
   transition: 0.5s background-color ease;
 }
 
 .navbar-lewagon-white {
-  background: white;
+  background: transparent;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand h2{
+  font-family: Roboto;
+  font-weight: bold;
 }
 
 .navbar-lewagon .navbar-brand img {

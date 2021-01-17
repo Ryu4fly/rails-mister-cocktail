@@ -1,6 +1,9 @@
 <div class="navbar navbar-expand-sm navbar-light fixed-top navbar-lewagon navbar-lewagon-white">
 
-  <%= link_to "🍸 BondBlends", root_path, class: "navbar-brand"%>
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "brand.png", alt: "alttext", class: "brand" %>
+    <h2>BondBlends</h2>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

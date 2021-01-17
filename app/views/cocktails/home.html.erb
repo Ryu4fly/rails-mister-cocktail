@@ -1,8 +1,18 @@
-<div class="banner-container">
+<div class="home-banner">
   <div id="cover-sheet">
     <div id="banner-title">
       <p>The Ultimate Cocktail List for Gentlmen</p>
       <p>Live to Die Another Day</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="cards">
+      <% @cocktails_sample.each do |cocktail| %>
+        <div class="card-cocktail">
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

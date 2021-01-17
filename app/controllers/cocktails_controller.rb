@@ -1,6 +1,8 @@
 class CocktailsController < ApplicationController
   before_action :cocktail_all, only: %i[home index]
-  def home; end
+  def home
+    @cocktails_sample = @cocktails.sample(4)
+  end
 
   def index; end
 
