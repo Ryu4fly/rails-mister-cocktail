@@ -4,7 +4,13 @@ class CocktailsController < ApplicationController
     @cocktails_sample = @cocktails.sample(4)
   end
 
-  def index; end
+  def index
+    @search = params["search"]
+    if @search.present?
+      @name = @search["name"].capitalize
+      @cocktails = Cocktail.where("name ILIKE ?", "%#{@name}%")
+    end
+  end
 
   def new
     @cocktail = Cocktail.new

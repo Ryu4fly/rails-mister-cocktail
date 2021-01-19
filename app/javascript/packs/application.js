@@ -18,11 +18,10 @@ import 'bootstrap';
 // const imagePath = (name) => images(name, true)
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { typed } from '../components/searchbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   initUpdateNavbarOnScroll();
+  typed();
 });
-
-
-console.log("hello")
