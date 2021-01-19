@@ -12,9 +12,17 @@
         <h1>Care for a sip?</h1>
       </div>
       <div class="cards">
-        <% @cocktails_sample.each do |cocktail| %>
-          <div class="card-cocktail">
-            <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        <% @cocktails.each do |cocktail| %>
+          <div class="card-img-background">
+            <% if cocktail.photo.attached? %>
+              <div class="card-cocktail" style="background-image: url(<%= cl_image_path(cocktail.photo.key) %>);">
+                <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+              </div>
+            <% else %>
+            <div class="card-cocktail">
+              <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+            </div>
+            <% end %>
           </div>
         <% end %>
       </div>
