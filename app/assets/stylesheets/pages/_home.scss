@@ -2,13 +2,13 @@
 .home-banner {
   background-image: asset-url("main-banner.jpg");
   background-size: cover;
-  height: 700px;
+  height: 105vh;
   background-position-y: -56px;
 
   #cover-sheet {
     position: relative;
     background-color: rgba(0,0,0,0.3);
-    height: 700px
+    height: 105vh;
   }
 
   #banner-title {
