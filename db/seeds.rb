@@ -14,9 +14,11 @@ serialized_ingredients = open(ingredients_url).read
 
 ingredients = JSON.parse(serialized_ingredients)['drinks']
 
+ingredients.push('Angostura Bitters', 'Campari')
+
 ingredients.each do |ingredient|
   Ingredient.create!(name: ingredient['strIngredient1'])
-  # p ingredient["strIngredient1"]
+  puts "#{ingredient.id} #{ingredient.name} generated"
 end
 
-puts 'Data generated!'
+puts 'All data generated!'
