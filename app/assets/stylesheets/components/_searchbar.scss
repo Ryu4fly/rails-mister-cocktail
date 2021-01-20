@@ -1,0 +1,20 @@
+.searchbar {
+  padding-top: 1vh;
+
+  #search {
+    width: 26vw;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+  }
+
+  #search::placeholder {
+    color: black;
+  }
+
+  #search:focus form {
+      box-shadow: none;
+      border: none;
+  }
+}
+
+

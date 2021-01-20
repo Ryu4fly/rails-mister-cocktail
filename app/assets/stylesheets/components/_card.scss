@@ -18,6 +18,17 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
   padding: 10vw;
+
+  a {
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2vw;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 // Smallest device

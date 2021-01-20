@@ -9,9 +9,9 @@ const emptyPlaceholder = () => {
 
 const loadDynamicBannerText = () => {
   new Typed('#search', {
-    strings: ['Some strings without', 'Some HTML', 'Chars'],
-    typeSpeed: 5,
-    backSpeed: 5,
+    strings: ['SEARCH YOUR DRINK.', 'A MARTINI. SHAKEN, NOT STIRRED', 'THAT\'S, UM, STIRRED NOT SHAKEN'],
+    typeSpeed: 20,
+    backSpeed: 20,
     attr: 'placeholder',
     bindInputFocusEvents: true,
     loop: true

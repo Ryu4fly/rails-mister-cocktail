@@ -18,7 +18,7 @@ import 'bootstrap';
 // const imagePath = (name) => images(name, true)
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
-import { loadDynamicBannerText, emptyPlaceholder } from '../components/banner';
+import { loadDynamicBannerText, emptyPlaceholder } from '../components/searchbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
