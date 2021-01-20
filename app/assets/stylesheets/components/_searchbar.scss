@@ -11,9 +11,23 @@
     color: black;
   }
 
-  #search:focus form {
+  #search:focus {
       box-shadow: none;
       border: none;
+  }
+
+  .btn-primary:focus {
+    box-shadow: none;
+    border: none;
+    border-color: none;
+    background-color: none;
+  }
+
+  .btn-primary:hover{
+    box-shadow: none;
+    border: none;
+    border-color: none;
+    background-color: none;
   }
 }
 
