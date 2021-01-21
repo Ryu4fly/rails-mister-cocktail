@@ -19,6 +19,7 @@ import 'bootstrap';
 // const imagePath = (name) => images(name, true)
 
 import { loadDynamicBannerText , searchPlaceholder, nameGenerator, namePlaceholder } from '../components/searchbar';
+import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
@@ -26,4 +27,5 @@ document.addEventListener('turbolinks:load', () => {
   nameGenerator();
   searchPlaceholder();
   namePlaceholder();
+  initSelect2();
 });
