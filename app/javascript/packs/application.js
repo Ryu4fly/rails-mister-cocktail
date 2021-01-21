@@ -18,10 +18,12 @@ import 'bootstrap';
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { loadDynamicBannerText, emptyPlaceholder } from '../components/searchbar';
+import { loadDynamicBannerText , searchPlaceholder, nameGenerator, namePlaceholder } from '../components/searchbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
-  emptyPlaceholder();
   loadDynamicBannerText();
+  nameGenerator();
+  searchPlaceholder();
+  namePlaceholder();
 });
