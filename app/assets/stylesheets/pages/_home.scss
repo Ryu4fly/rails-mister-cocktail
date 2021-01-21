@@ -12,8 +12,8 @@
 
   #banner-title {
     position: absolute;
-    top: 260px;
-    left: 50px;
+    top: 46%;
+    left: 6%;
     line-height: 50px;
   }
 
@@ -56,19 +56,21 @@
 //   }
 // }
 
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {
-
-
-
-//   }
-// }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #banner-title {
+    display: absolute;
+    top: 25vw;
+    left: 6.4vw;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
   #banner-title {
-    top: 58vh;
+    display: absolute;
+    top: 25vw;
+    left: 6.4vw;
   }
 }
 

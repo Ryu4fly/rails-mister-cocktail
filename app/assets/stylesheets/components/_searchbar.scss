@@ -16,18 +16,8 @@
       border: none;
   }
 
-  .btn-primary:focus {
-    box-shadow: none;
-    border: none;
-    border-color: none;
-    background-color: none;
-  }
-
-  .btn-primary:hover{
-    box-shadow: none;
-    border: none;
-    border-color: none;
-    background-color: none;
+  .search-submit {
+      -webkit-appearance: none;
   }
 }
 

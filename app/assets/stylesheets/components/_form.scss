@@ -1,3 +1,17 @@
-.form {
+.name-form {
   padding: 18vw;
+  color: white;
+  h1 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .submit-button {
+    background-color: white;
+  }
+}
+
+.dose-form {
+  width: 45vw;
+  margin-left: 80px;
 }
